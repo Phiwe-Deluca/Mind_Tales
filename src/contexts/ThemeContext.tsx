@@ -1,7 +1,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-type Theme = 'happy' | 'moody' | 'vibey' | 'angsty';
+type Theme = 'cosmic' | 'jungle' | 'mystic' | 'ancestral';
 
 interface ThemeContextType {
   theme: Theme;
@@ -19,11 +19,11 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('happy');
+  const [theme, setTheme] = useState<Theme>('cosmic');
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={`theme-${theme} transition-all duration-1000`}>
+      <div className={`theme-${theme} transition-all duration-1000 min-h-screen`}>
         {children}
       </div>
     </ThemeContext.Provider>

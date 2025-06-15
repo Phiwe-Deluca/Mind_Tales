@@ -22,7 +22,12 @@ const Index = () => {
   const handleComment = (postId: string, comment: string) => {
     setPosts(posts.map(post => 
       post.id === postId 
-        ? { ...post, comments: [...post.comments, { id: Date.now().toString(), author: 'Anonymous', content: comment, avatar: `https://api.dicebear.com/7.x/pixel-art/svg?seed=${Date.now()}` }] }
+        ? { ...post, comments: [...post.comments, { 
+            id: Date.now().toString(), 
+            author: 'Soul Seeker', 
+            content: comment, 
+            avatar: `https://api.dicebear.com/7.x/pixel-art/svg?seed=${Date.now()}` 
+          }] }
         : post
     ));
   };
@@ -37,8 +42,34 @@ const Index = () => {
           <Header />
           <ThemeSwitcher />
           
-          <main className="container mx-auto px-4 py-8">
-            <div className="max-w-4xl mx-auto space-y-8">
+          {/* Mystical navigation */}
+          <nav className="flex justify-center mb-12">
+            <div className="flex space-x-8 px-8 py-4 rounded-full bg-black/30 backdrop-blur-md border border-amber-400/20">
+              <a href="#" className="text-amber-200 hover:text-amber-100 font-mystical tracking-wide transition-colors">
+                Sacred Journal
+              </a>
+              <a href="#" className="text-amber-200 hover:text-amber-100 font-mystical tracking-wide transition-colors">
+                Mood Gallery
+              </a>
+              <a href="#" className="text-amber-200 hover:text-amber-100 font-mystical tracking-wide transition-colors">
+                Soul Circle
+              </a>
+            </div>
+          </nav>
+          
+          <main className="container mx-auto px-6 py-8">
+            <div className="max-w-4xl mx-auto space-y-12">
+              {/* Mystical intro */}
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-serif text-amber-100 mb-4">
+                  ✧ Sacred Scrolls of the Soul ✧
+                </h2>
+                <p className="text-amber-200/80 font-mystical text-lg max-w-2xl mx-auto">
+                  Journey through these leaf-bound pages where cosmic energy meets earthly wisdom, 
+                  and every story blooms with ancestral magic.
+                </p>
+              </div>
+
               {posts.map((post) => (
                 <PostCard
                   key={post.id}
@@ -49,6 +80,18 @@ const Index = () => {
               ))}
             </div>
           </main>
+
+          {/* Footer with mystical elements */}
+          <footer className="mt-20 py-12 text-center border-t border-amber-400/20">
+            <div className="flex justify-center space-x-4 mb-4">
+              <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse delay-300"></div>
+              <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse delay-600"></div>
+            </div>
+            <p className="text-amber-200/60 font-mystical">
+              ✧ Blessed by moonlight, powered by soul energy ✧
+            </p>
+          </footer>
         </div>
       </div>
     </ThemeProvider>

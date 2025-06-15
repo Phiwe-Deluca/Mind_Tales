@@ -3,43 +3,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;500;600;700&display=swap');
+/* Import mystical fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
+/* Soul Bloom Design System */
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-
     --radius: 0.5rem;
-
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -89,108 +78,101 @@
   body {
     @apply bg-background text-foreground;
     cursor: none;
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2d1b2d 100%);
+    min-height: 100vh;
   }
 }
 
-/* Custom Font Classes */
-.pixelated-font {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.75rem;
-  line-height: 1.5;
+/* Mystical Font Classes */
+.font-serif {
+  font-family: 'Cinzel', serif;
 }
 
-.magazine-font {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 500;
+.font-mystical {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
   letter-spacing: 0.025em;
 }
 
 /* Theme-specific styles */
-.theme-happy {
-  --accent-color: #fbbf24;
-  --bg-gradient: linear-gradient(135deg, #fef3c7, #fce7f3, #fed7aa);
+.theme-cosmic {
+  --primary-glow: #a855f7;
+  --secondary-glow: #ec4899;
+  background: radial-gradient(ellipse at top, #1e1b4b, #0f0f0f);
 }
 
-.theme-moody {
-  --accent-color: #6366f1;
-  --bg-gradient: linear-gradient(135deg, #e0e7ff, #f3e8ff, #dbeafe);
+.theme-jungle {
+  --primary-glow: #10b981;
+  --secondary-glow: #059669;
+  background: radial-gradient(ellipse at top, #064e3b, #0f0f0f);
 }
 
-.theme-vibey {
-  --accent-color: #06b6d4;
-  --bg-gradient: linear-gradient(135deg, #cffafe, #d1fae5, #a7f3d0);
+.theme-mystic {
+  --primary-glow: #f59e0b;
+  --secondary-glow: #d97706;
+  background: radial-gradient(ellipse at top, #92400e, #0f0f0f);
 }
 
-.theme-angsty {
-  --accent-color: #ef4444;
-  --bg-gradient: linear-gradient(135deg, #fee2e2, #fed7aa, #fce7f3);
+.theme-ancestral {
+  --primary-glow: #dc2626;
+  --secondary-glow: #f59e0b;
+  background: radial-gradient(ellipse at top, #7f1d1d, #0f0f0f);
 }
 
-/* Magazine cutout effect */
-.magazine-cutout {
-  position: relative;
-  background: white;
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-}
-
-.magazine-cutout::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, transparent 30%, rgba(0, 0, 0, 0.1) 70%);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-/* Speech bubble styles */
-.speech-bubble {
-  position: relative;
-  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
-}
-
-/* Mood tag styles */
-.mood-tag {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(4px);
-  border: 2px solid currentColor;
-  text-shadow: none;
-}
-
-/* Custom animations */
-@keyframes sparkle {
-  0%, 100% { opacity: 0; transform: scale(0); }
-  50% { opacity: 1; transform: scale(1); }
-}
-
+/* Mystical animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-15px) rotate(1deg); }
+  66% { transform: translateY(-5px) rotate(-1deg); }
 }
 
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
-.animate-sparkle {
-  animation: sparkle 2s infinite;
+@keyframes cosmic-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes mystical-glow {
+  0%, 100% { box-shadow: 0 0 20px var(--primary-glow, #a855f7); }
+  50% { box-shadow: 0 0 40px var(--secondary-glow, #ec4899), 0 0 60px var(--primary-glow, #a855f7); }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
-.animate-glitch {
-  animation: glitch 0.3s;
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-cosmic-pulse {
+  animation: cosmic-pulse 3s ease-in-out infinite;
+}
+
+.animate-mystical-glow {
+  animation: mystical-glow 4s ease-in-out infinite;
+}
+
+/* Soul bloom specific effects */
+.soul-bloom-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.mystical-text-glow {
+  text-shadow: 
+    0 0 10px var(--primary-glow, #a855f7),
+    0 0 20px var(--primary-glow, #a855f7),
+    0 0 30px var(--primary-glow, #a855f7);
 }
 
 /* Hide default cursor */
@@ -198,11 +180,29 @@
   cursor: none !important;
 }
 
-/* Hover effects */
+/* Hover effects with mystical energy */
 button:hover {
-  animation: glitch 0.3s;
+  animation: cosmic-pulse 0.3s ease-in-out;
 }
 
-.magazine-cutout:hover {
-  animation: float 0.5s ease-in-out;
+.soul-bloom-card:hover {
+  animation: mystical-glow 0.5s ease-in-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary-glow, #a855f7), var(--secondary-glow, #ec4899));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--secondary-glow, #ec4899), var(--primary-glow, #a855f7));
 }

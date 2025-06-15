@@ -11,7 +11,7 @@ const AnimatedCursor = () => {
       
       setTrail(prev => [
         { x: e.clientX, y: e.clientY, id: Date.now() },
-        ...prev.slice(0, 8)
+        ...prev.slice(0, 12)
       ]);
     };
 
@@ -21,24 +21,29 @@ const AnimatedCursor = () => {
 
   return (
     <>
+      {/* Floating petals trail */}
       {trail.map((point, index) => (
         <div
           key={point.id}
-          className="fixed pointer-events-none z-50 w-2 h-2 rounded-full bg-pink-400 animate-pulse"
+          className="fixed pointer-events-none z-50 animate-pulse"
           style={{
-            left: point.x - 4,
-            top: point.y - 4,
-            opacity: 1 - (index * 0.1),
-            transform: `scale(${1 - (index * 0.1)})`,
+            left: point.x - 6,
+            top: point.y - 6,
+            opacity: 1 - (index * 0.08),
+            transform: `scale(${1 - (index * 0.07)}) rotate(${index * 15}deg)`,
           }}
-        />
+        >
+          <div className="w-3 h-3 bg-gradient-to-br from-amber-400 to-emerald-400 rounded-full opacity-70"></div>
+        </div>
       ))}
       
+      {/* Main cursor glow */}
       <div
-        className="fixed pointer-events-none z-50 w-4 h-4 rounded-full border-2 border-pink-400 animate-pulse"
+        className="fixed pointer-events-none z-50 w-8 h-8 rounded-full border-2 border-amber-400/60 bg-amber-400/10 backdrop-blur-sm"
         style={{
-          left: position.x - 8,
-          top: position.y - 8,
+          left: position.x - 16,
+          top: position.y - 16,
+          boxShadow: '0 0 20px rgba(251, 191, 36, 0.4)',
         }}
       />
     </>

@@ -2,87 +2,68 @@
 export const mockPosts = [
   {
     id: '1',
-    title: '✨ feeling like a digital fairy today ✨',
-    content: 'spent the whole morning organizing my playlist and now i feel like i could manifest anything. the vibes are immaculate and my third eye is WIDE OPEN 👁️‍🗨️ anyone else feeling this cosmic energy???',
-    mood: 'vibey',
-    timestamp: '2 hours ago',
-    likes: 23,
-    isLiked: false,
+    title: 'Moonlit Manifestations',
+    content: 'Tonight I sat under the crescent moon, feeling the cosmic energy flow through my chakras. The universe whispered secrets of abundance and spiritual growth. My crystals hummed with ancient wisdom, and I could feel my ancestors guiding me toward my highest self. ✨',
+    mood: 'cosmic',
+    timestamp: '3 hours ago',
+    likes: 24,
+    isLiked: true,
     comments: [
       {
         id: '1',
-        author: 'moonchild_97',
-        content: 'omg yes!! mercury is in retrograde but make it ✨aesthetic✨',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=moonchild97'
-      },
-      {
-        id: '2',
-        author: 'cyberprince',
-        content: 'your energy is literally radiating through my screen rn 🌟',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=cyberprince'
+        author: 'SoulSister',
+        content: 'This resonates so deeply with my soul! 🌙✨',
+        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=soulsister'
       }
     ]
   },
   {
     id: '2',
-    title: 'rainy day thoughts 🌧️',
-    content: 'sitting by my window with my favorite mug and watching the rain hit the glass. sometimes the melancholy hits different and thats okay. we need these quiet moments to recharge our souls.',
-    mood: 'moody',
-    timestamp: '5 hours ago',
-    likes: 41,
-    isLiked: true,
+    title: 'Jungle Dreams & Sacred Rhythms',
+    content: 'Walking through the forest today, I felt the heartbeat of Mother Earth beneath my feet. The vines seemed to dance with my spirit, and every leaf told a story of resilience and growth. Nature is the greatest teacher. 🌿',
+    mood: 'jungle',
+    timestamp: '1 day ago',
+    likes: 31,
+    isLiked: false,
     comments: [
       {
+        id: '2',
+        author: 'EarthKeeper',
+        content: 'The forest speaks to those who listen 🌳',
+        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=earthkeeper'
+      },
+      {
         id: '3',
-        author: 'raindrops_aesthetic',
-        content: 'this is such a vibe. rainy days are for journaling and hot chocolate 💙',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=raindrops'
+        author: 'WildHeart',
+        content: 'Your connection to nature is inspiring!',
+        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=wildheart'
       }
     ]
   },
   {
     id: '3',
-    title: 'AAAHHHHH WHY IS EVERYTHING SO COMPLICATED',
-    content: 'literally nothing is going right today and i feel like screaming into the void. sometimes you just need to let the anger out before you can find peace again. this too shall pass but RIGHT NOW it sucks!!!',
-    mood: 'angsty',
-    timestamp: '1 day ago',
-    likes: 67,
+    title: 'Golden Hour Reflections',
+    content: 'As the sun painted the sky in shades of amber and gold, I realized that every ending is a new beginning. My meditation practice has taught me to embrace change like the seasons - with grace, trust, and deep knowing. 🌅',
+    mood: 'mystic',
+    timestamp: '2 days ago',
+    likes: 18,
+    isLiked: true,
+    comments: []
+  },
+  {
+    id: '4',
+    title: 'Ancestral Wisdom Rising',
+    content: 'Today I honored my lineage with ritual and remembrance. The strength of my foremothers flows through my veins like liquid gold. Their stories, their struggles, their triumphs - all live within me. I am the answer to their prayers. 👑',
+    mood: 'ancestral',
+    timestamp: '3 days ago',
+    likes: 42,
     isLiked: false,
     comments: [
       {
         id: '4',
-        author: 'void_screamer',
-        content: 'felt this in my SOUL. sending you virtual hugs and good vibes 🖤',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=voidscreamer'
-      },
-      {
-        id: '5',
-        author: 'chaos_queen',
-        content: 'big mood energy. sometimes we need to feel our feelings LOUDLY',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=chaosqueen'
-      }
-    ]
-  },
-  {
-    id: '4',
-    title: '🌈 GOOD VIBES ONLY TODAY 🌈',
-    content: 'woke up to sunshine streaming through my curtains and my favorite song playing on shuffle. got my coffee, did my skincare routine, and now im ready to conquer the world! life is beautiful and so are you! 💖✨🦋',
-    mood: 'happy',
-    timestamp: '2 days ago',
-    likes: 89,
-    isLiked: true,
-    comments: [
-      {
-        id: '6',
-        author: 'sunshine_bb',
-        content: 'your positivity is CONTAGIOUS!! needed this today 🌻',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=sunshine'
-      },
-      {
-        id: '7',
-        author: 'happy_vibes_only',
-        content: 'YES YES YES this energy is everything 💕💕💕',
-        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=happyvibes'
+        author: 'QueenEnergy',
+        content: 'Powerful words that touch my soul deeply',
+        avatar: 'https://api.dicebear.com/7.x/pixel-art/svg?seed=queenenergy'
       }
     ]
   }
