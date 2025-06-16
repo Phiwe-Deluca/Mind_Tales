@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# 🌀 MindTales
 
-## Project info
+**MindTales** is a mood-driven digital journal and blog platform built for creators, dreamers, and developers who value introspection as much as innovation. Designed to blend expressive aesthetics with clean backend structure, this project reflects my personal learning journey one where code becomes storytelling.
 
-**URL**: https://lovable.dev/projects/28877e83-29db-45e9-89fe-76b4565147eb
+---
 
-## How can I edit this code?
+## 🌱 Features
 
-There are several ways of editing your application.
+- 🎨 Mood-based blog themes (fierce, soft, mystical & more)
+- ✍️ Post creation/editing with live Markdown preview
+- 🧠 Supabase-powered authentication & RLS-secured profiles
+- 🌘 Personalized reading modes for intentional, mindful browsing
+- 🗂️ Tag filtering and mood-tag system for discovery
+- 🔐 Clean, extendable backend with Postgres and TypeScript types
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/28877e83-29db-45e9-89fe-76b4565147eb) and start prompting.
+## 🛠 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Frontend        | Backend         | Dev Tools         |
+|-----------------|-----------------|-------------------|
+| React           | Supabase        | Vite              |
+| TypeScript      | Postgres        | VS Code           |
+| Tailwind CSS    | Supabase Auth   | Git + GitHub CLI  |
+| shadcn/ui       | RLS Policies    | IntelliJ (sometimes!) |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📚 Learn With Me
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This isn’t a finished product—it’s a living system that evolves as I do. Feel free to fork it, remix it, or leave a star if you vibe with the vision 
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📸 Screenshots
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+> Coming soon: A visual peek into the reading interface, post editor, and theme moods.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/your-username/mind-tales.git
+cd mind-tales
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+## ✨ Design Inspiration
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The visual direction and aesthetic style for **MindTales** was brought to life with creative guidance from **[Lovable.dev](https://www.loveable.dev/)** a playground for designers and dreamers building soulful software.
 
-**Use GitHub Codespaces**
+MindTales isn’t just about code it’s a rhythm, a ritual, and a reflection.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/28877e83-29db-45e9-89fe-76b4565147eb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
