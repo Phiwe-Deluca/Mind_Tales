@@ -1,12 +1,13 @@
 
 import React from 'react';
 import { useTheme } from '../contexts/ThemeContext';
-import { Sun, TreePine, Zap, Crown } from 'lucide-react';
+import { Sun, TreePine, Zap, Crown, Gem } from 'lucide-react';
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
   const themes = [
+    { name: 'gilded', icon: Gem, color: 'bg-gradient-to-br from-amber-600 to-rose-500', label: 'Gilded Jungle' },
     { name: 'cosmic', icon: Sun, color: 'bg-gradient-to-br from-purple-500 to-pink-500', label: 'Cosmic' },
     { name: 'jungle', icon: TreePine, color: 'bg-gradient-to-br from-emerald-500 to-green-600', label: 'Jungle' },
     { name: 'mystic', icon: Zap, color: 'bg-gradient-to-br from-amber-500 to-orange-500', label: 'Mystic' },
@@ -21,7 +22,7 @@ const ThemeSwitcher = () => {
           onClick={() => setTheme(name as any)}
           className={`p-4 rounded-full transition-all duration-500 transform hover:scale-110 backdrop-blur-md border border-white/20 ${
             theme === name 
-              ? `${color} text-white shadow-2xl shadow-amber-500/25 scale-110` 
+              ? `${color} text-white shadow-2xl shadow-amber-500/40 scale-110` 
               : 'bg-black/30 text-amber-200/80 hover:bg-black/50'
           }`}
           title={label}

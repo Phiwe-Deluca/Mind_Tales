@@ -1,7 +1,7 @@
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
-type Theme = 'cosmic' | 'jungle' | 'mystic' | 'ancestral';
+type Theme = 'cosmic' | 'jungle' | 'mystic' | 'ancestral' | 'gilded';
 
 interface ThemeContextType {
   theme: Theme;
@@ -19,7 +19,7 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('cosmic');
+  const [theme, setTheme] = useState<Theme>('gilded');
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
