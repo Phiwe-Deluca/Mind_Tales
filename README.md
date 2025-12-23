@@ -26,7 +26,7 @@
 ---
 
 ## 📚 Learning Journey  
-This isn’t a finished product—it’s a living system that evolves as I do. **MindTales** is both a technical playground and a creative canvas. Feel free to fork it, remix it, or leave a star if you vibe with the vision.  
+This isn’t a finished product it’s a living system that evolves as I do. **MindTales** is both a technical playground and a creative canvas. Feel free to fork it, remix it, or leave a star if you vibe with the vision.  
 
 ---
 
