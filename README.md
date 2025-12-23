@@ -38,9 +38,6 @@ This isn’t a finished product—it’s a living system that evolves as I do. F
 
 ---
 
-## ✨ Design Inspiration
-
-The visual direction and aesthetic style for **MindTales** was brought to life with creative guidance from **[Lovable.dev](https://www.loveable.dev/)** a playground for designers and dreamers building soulful software.
 
 MindTales isn’t just about code it’s a rhythm, a ritual, and a reflection.
 
